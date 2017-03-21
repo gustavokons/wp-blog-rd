@@ -1,0 +1,196 @@
+.page-template-page-epic{
+  .epic-nav{
+    background: $white;
+    border: 0;
+    border-radius: 0;
+    min-height: 48px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    &:after {
+      content:"";
+      height: 48px;
+      left: 0;
+      position: absolute;
+      top: 48px;
+      width: 100%;
+    }
+    // RD ICON MENU
+    .navbar-brand{
+      height: 48px;
+      position: relative;
+      width: 88px;
+      i {
+        color: $epic-main-color;
+      }
+      &:after {
+        background: url("img/rd-signature.svg") no-repeat center center;
+        content: "";
+        height: 32px;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        width: 32px;
+      }
+      span {
+        display: block;
+        overflow: hidden;
+        width: 0;
+      }
+  	}
+    .open .navbar-brand {
+      background: $gray-lighter;
+    }
+    h1 {
+      display: none;
+      color: $epic-main-color;
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      line-height: 16px;
+      margin: 16px 0 16px 16px;
+      text-transform: uppercase;
+    }
+  }
+
+  // HIDE NAV WHEN SCROLL DOWN
+  .headroom {
+    transition: transform 200ms linear;
+    will-change: transform;
+    &.headroom--pinned {
+      transform: translateY(0%);
+    }
+    &.headroom--unpinned {
+      transform: translateY(-48px);
+    }
+  }
+
+  .signature-nav .navbar-nav {
+    border-radius: 0 0 4px 4px;
+    margin-top: 0;
+    padding: $v-space $col-pad;
+    top: 48px;
+    a, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      float: none;
+      padding-bottom: 8px;
+      ul {
+        position: relative;
+        &.dropdown-menu {
+          display: block;
+        }
+      }
+    }
+    & > li > a{
+      @include uppercase-font();
+      color: $gray-dark;
+    }
+  }
+
+  // TOPIC NAV AND NAV SHARER
+  .topics-nav, .share-nav {
+    float: right;
+    margin-right: 0;
+    position: relative;
+    .dropdown-toggle {
+      display: inline-block;
+    }
+    .dropdown-menu {
+      border-radius: 0 0 4px 4px;
+      top: 46px;
+      li, li a
+      {
+        padding: 0;
+        white-space: normal;
+      }
+    }
+  }
+
+  // NAV SHARER
+  .share-nav {
+    .dropdown-toggle {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 14px 16px;
+      width: 48px;
+    }
+    .dropdown-menu {
+      min-width: 0;
+      padding: 0;
+      width: 48px;
+      li {
+        font-size: 23px;
+        padding: 8px;
+        text-align: center;
+      }
+    }
+  }
+
+  // TOPIC NAV
+  .topics-nav {
+    .dropdown-toggle {
+      @include uppercase-font();
+      background-color: $gray-lighter;
+      color: $text-color;
+      padding: 15px 16px;
+      width: 180px;
+      &:after {
+        @include font-icon("\f0d7");
+        position: absolute;
+        right: 10px;
+        top: 16px;
+      }
+    }
+    .dropdown-menu {
+      padding: 16px;
+      width: 180px;
+      li {
+        @include uppercase-font();
+      }
+      .active>a {
+        &, &:hover, &:focus {
+          color: $epic-main-color;
+          background-color: transparent;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+
+  // SCROLLING TRACKER
+  .tracker {
+    background-color: lighten($epic-main-color, 40%);
+    height: 4px;
+    margin-top: 48px;
+    width: 100%;
+    .progress {
+      background-color: $epic-main-color;
+      height: 4px;
+      transition: width 200ms;
+      width: 0%;
+    }
+  }
+}
+
+
+@media (min-width: $screen-sm){
+  .page-template-page-epic{
+    .epic-nav h1 {
+      display: inline-block;
+    }
+    .tracker {
+      margin-top: 0;
+    }
+    .topics-nav {
+      .dropdown-toggle {
+        width: 240px;
+      }
+      .dropdown-menu {
+        width: 240px;
+      }
+    }
+  }
+}

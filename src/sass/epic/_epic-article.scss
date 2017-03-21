@@ -1,0 +1,230 @@
+.page-template-page-epic{
+  main{
+
+    // EPIC ARTICLE
+    .epic-article {
+      padding: (2 * $v-space) 0;
+      position: relative;
+    }
+
+    .cta {
+      background-color: $epic-main-color;
+      color: $white;
+      margin: $v-space (-1 * $col-pad);
+      padding: $v-space (1.5 * $v-space);
+      text-align: center;
+      &:last-child{
+         margin-bottom: (-1 * $col-pad);
+      }
+      .btn {
+        @include ghost-button(rgba(255,255,255,0.5), $white, $white, $white)
+      }
+    }
+    section.cta {
+      margin: $v-space 0;
+      padding: $v-space 0 (2*$v-space);
+    }
+
+    .embed-responsive {
+      margin: $v-space 0;
+    }
+    ul.related_posts{
+      list-style: none;
+      padding: 0;
+      br {
+        content: "";
+      }
+      li{
+        display: table;
+        margin-top: 16px;
+        a{
+          border-bottom: 0;
+          color: $gray-dark;
+          display: table-cell;
+          font-size: 0.875em;
+          font-weight: 300;
+          letter-spacing: -0.5px;
+          line-height: 1.5;
+          vertical-align: middle;
+          &.rp_thumbnail{
+            padding: 0;
+            width: 64px;
+          }
+          &.rp_title{
+            line-height: 24px;
+            height: 80px;
+            padding: 0 0 0 15px;
+          }
+          &:visited, &:hover, &:focus{
+            color: $gray-dark;
+          }
+          &:hover, &:focus{
+            color: $theme-primary-color !important;
+            & + a{
+              color: $theme-primary-color !important;
+            }
+          }
+          img{
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+  .social{
+    background: rgba(255,255,255,.9);
+    border-top: 1px solid $gray-lines;
+    bottom: 0;
+    left: 0;
+    margin: 14px 0 0 0;
+    padding: 8px 0 0 34px;
+    position: fixed;
+    right: 0;
+    text-align: left;
+    z-index: 100;
+    &:before {
+      @include font-icon("\f1e0");
+      position: relative;
+      top: -2px;
+      color: $gray-light;
+      position: absolute;
+      top: 16px;
+      left: 8px;
+    }
+    .comments{
+      color: $gray-dark;
+      cursor: default;
+      font-weight: 300;
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0 0 8px 0;
+      li{
+        display: inline-block;
+        a{
+          border-radius: 32px;
+          display: block;
+          height: 32px;
+          margin: 0;
+          position: relative;
+          text-indent: -5000px;
+          width: 32px;
+          &:after{
+            color: $white;
+            display: block;
+            font-family: $font-family-icons;
+            font-size: 15px;
+            height: 32px;
+            left: 0;
+            line-height: 32px;
+            position: absolute;
+            text-align: center;
+            text-indent: 0;
+            top: 0;
+            width: 32px;
+          }
+        }
+        &.facebook{
+          a{
+            background: rgb(66,87,156);
+            &:after{
+              content: '\f09a';
+            }
+          }
+        }
+        &.twitter{
+          a{
+            background: rgb(84,166,229);
+            &:after{
+              content: '\f099';
+            }
+          }
+        }
+        &.google{
+          a{
+            background: rgb(206,83,51);
+            &:after{
+              content: '\f0d5';
+            }
+          }
+        }
+        &.linkedin{
+          a{
+            background: rgb(53,121,186);
+            &:after{
+              content: '\f0e1';
+            }
+          }
+        }
+        &.whatsapp{
+          a{
+            background: rgb(50,183,66);
+            &:after{
+              content: '\f232';
+            }
+          }
+        }
+        & + li{
+          margin: 0 0 0 4px;
+        }
+      }
+    }
+    // SCROLL TO TOP
+    .scroll-top {
+      @include prevent-selection();
+      @include  uppercase-font();
+      background-color: $gray-lighter;
+      border-radius: 4px;
+      bottom: 6px;
+      cursor: pointer;
+      padding: 9px 16px;
+      position: absolute;
+      right: 6px;
+      transition: background .4s;
+      z-index: 99;
+      span {
+        margin-right: 8px;
+      }
+      &:after {
+        @include font-icon("\f062");
+        position: relative;
+        top: -2px;
+      }
+      &:hover, &:focus {
+        background-color: $epic-main-color;
+        color: $white;
+      }
+    }
+    // /end epic scroll to top
+  }
+  &>footer .copyright {
+    padding: 32px 0 80px;
+  }
+}
+
+
+
+@media (min-width: $screen-lg){
+  .page-template-page-epic{
+    main{
+      body > footer .signup:before {
+    		background: url('img/signup.gif') no-repeat;
+        background-size: contain;
+    	}
+    }
+  }
+}
+
+@media (min-width: $screen-md){
+  .page-template-page-epic{
+    main{
+      [class^="col"] {
+        padding: 48px $col-pad;
+      }
+      [class^="col"] [class^="col"] {
+        padding: 0 15px;
+      }
+    }
+  }
+}

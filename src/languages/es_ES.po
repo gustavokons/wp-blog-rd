@@ -1,0 +1,396 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-03-14 10:32-0300\n"
+"PO-Revision-Date: 2017-03-14 11:20-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: header.php:77 content-cases.php:62 single.php:118 inc/shortcodes.php:21
+msgid "Testar Gratuitamente"
+msgstr "Prueba Gratuita"
+
+#: functions.php:36
+msgid "Navegação Principal"
+msgstr ""
+
+#: functions.php:39
+msgid "Navegação Footer"
+msgstr ""
+
+#: content-cases.php:35
+msgid "Tamanho da empresa"
+msgstr "Tamaño de la empresa"
+
+#: content-cases.php:38
+msgid "Segmento"
+msgstr "Segmento"
+
+#: content-cases.php:41
+msgid "Objetivos"
+msgstr "Objetivos"
+
+#: content-cases.php:61 single.php:108
+msgid "Ver esta história completa"
+msgstr "¡Ve esta historia completa!"
+
+#: single.php:22
+msgid "Assista ao vídeo"
+msgstr "¡Mira el video!"
+
+#: single.php:37
+msgid "Sobre a"
+msgstr "Acerca de"
+
+#: single.php:65
+msgid "Veja outras histórias de sucesso tão incríveis quanto esta"
+msgstr "Vea otros casos de éxito tan increíbles como estos"
+
+#: single.php:117
+msgid "Pronto para fazer um Teste Gratuito do RD Station"
+msgstr "¿Estás listo para hacer un Teste Gratuito de RD Station"
+
+#: 404.php:8
+msgid "Eita! Ocorreu algum erro!"
+msgstr "¡Hola! ¡Ocurrió un error!"
+
+#: 404.php:9
+msgid "Talvez você esteja procurando por algo que não existe..."
+msgstr "Tal vez estes buscando algo que no existe…"
+
+#: 404.php:10
+msgid "Ou que até existe, mas não está disponível no momento."
+msgstr "O que tal vez existe, pero no está disponible en este momento."
+
+#: 404.php:16
+msgid "Enquanto isso, tente uma das opções abaixo, talvez elas possam ajudar:"
+msgstr ""
+"Mientras tanto, intenta una de las opciones de abajo, tal vez te pueden "
+"ayudar:"
+
+#: 404.php:17
+msgid "Retornar à página anterior"
+msgstr "Volver a la página anterior"
+
+#: 404.php:18
+msgid "Ir para a página inicial"
+msgstr "Ir a la página inicial"
+
+#: 404.php:27
+msgid "Ou então, saiba mais um pouco sobre nós:"
+msgstr "O puedes aprender un poco sobre nosotros:"
+
+#: footer.php:13
+msgid "O software de Marketing e Vendas"
+msgstr "El software de Marketing y Ventas"
+
+#: footer.php:30
+msgid "Acompanhe o"
+msgstr "Sigue a"
+
+#: footer.php:36
+msgid "Política de Privacidade."
+msgstr "Política de privacidad."
+
+#: inc/custom-types.php:4 inc/custom-types.php:15
+msgid "Cases"
+msgstr ""
+
+#: inc/custom-types.php:5
+msgid "Case"
+msgstr ""
+
+#: inc/custom-types.php:6
+msgid "Adicionar novo"
+msgstr ""
+
+#: inc/custom-types.php:7
+msgid "Adicionar novo case"
+msgstr ""
+
+#: inc/custom-types.php:8
+msgid "Editar case"
+msgstr ""
+
+#: inc/custom-types.php:9
+msgid "Novo case"
+msgstr ""
+
+#: inc/custom-types.php:10
+msgid "Todos os cases"
+msgstr ""
+
+#: inc/custom-types.php:11
+msgid "Visualizar case"
+msgstr ""
+
+#: inc/custom-types.php:12
+msgid "Buscar cases"
+msgstr ""
+
+#: inc/custom-types.php:13
+msgid "Nenhum case encontrado"
+msgstr ""
+
+#: inc/custom-types.php:14
+msgid "Nenhum case no Lixo"
+msgstr ""
+
+#: inc/shortcodes.php:20
+msgid "Falar com um Consultor"
+msgstr ""
+
+#: inc/metaboxes.php:4
+msgid "Informações do Case"
+msgstr ""
+
+#: inc/metaboxes.php:9
+msgid "Tipo de Case"
+msgstr ""
+
+#: inc/metaboxes.php:13 inc/metaboxes.php:29 inc/metaboxes.php:51
+#: inc/metaboxes.php:62 inc/metaboxes.php:87 inc/metaboxes.php:101
+msgid "Selecione"
+msgstr ""
+
+#: inc/metaboxes.php:14
+msgid "Pequenas, Médias e Grandes Empresas"
+msgstr ""
+
+#: inc/metaboxes.php:15
+msgid "Agências de Marketing"
+msgstr ""
+
+#: inc/metaboxes.php:20
+msgid "Nome da Empresa"
+msgstr ""
+
+#: inc/metaboxes.php:25
+msgid "Tamanho da Empresa"
+msgstr "Tamaño de la empresa"
+
+#: inc/metaboxes.php:30
+msgid "Pequena"
+msgstr "Pequeña"
+
+#: inc/metaboxes.php:31
+msgid "Média"
+msgstr "Media"
+
+#: inc/metaboxes.php:32
+msgid "Grande"
+msgstr ""
+
+#: inc/metaboxes.php:37
+msgid "Vídeo"
+msgstr ""
+
+#: inc/metaboxes.php:42
+msgid "Logo da Empresa"
+msgstr ""
+
+#: inc/metaboxes.php:47
+msgid "Tipo de Empresa"
+msgstr ""
+
+#: inc/metaboxes.php:52
+msgid "B2B"
+msgstr ""
+
+#: inc/metaboxes.php:53
+msgid "B2C"
+msgstr ""
+
+#: inc/metaboxes.php:58
+msgid "Segmento de Empresa"
+msgstr "Segmento de Empresa"
+
+#: inc/metaboxes.php:63
+msgid "Consultorias e Treinamentos"
+msgstr ""
+
+#: inc/metaboxes.php:64
+msgid "Educação"
+msgstr ""
+
+#: inc/metaboxes.php:65
+msgid "Ecommerce"
+msgstr "E-Commerce"
+
+#: inc/metaboxes.php:66
+msgid "Financeiro/Contábil"
+msgstr ""
+
+#: inc/metaboxes.php:67
+msgid "Fitness"
+msgstr ""
+
+#: inc/metaboxes.php:68
+msgid "Hardware"
+msgstr ""
+
+#: inc/metaboxes.php:69
+msgid "Imobiliário"
+msgstr ""
+
+#: inc/metaboxes.php:70
+msgid "Indústria"
+msgstr ""
+
+#: inc/metaboxes.php:71
+msgid "Jurídico"
+msgstr ""
+
+#: inc/metaboxes.php:72
+msgid "Marketplace"
+msgstr ""
+
+#: inc/metaboxes.php:73
+msgid "Petrolífero"
+msgstr ""
+
+#: inc/metaboxes.php:74
+msgid "Saúde"
+msgstr ""
+
+#: inc/metaboxes.php:75
+msgid "Serviços de RH"
+msgstr ""
+
+#: inc/metaboxes.php:76
+msgid "Software"
+msgstr ""
+
+#: inc/metaboxes.php:77
+msgid "Telecom"
+msgstr ""
+
+#: inc/metaboxes.php:78
+msgid "Varejo"
+msgstr ""
+
+#: inc/metaboxes.php:83
+msgid "Solução"
+msgstr ""
+
+#: inc/metaboxes.php:88
+msgid "Gerar Leads Qualificados"
+msgstr "Generar Leads Calificados"
+
+#: inc/metaboxes.php:89
+msgid "Mensurar e mostrar resultado"
+msgstr ""
+
+#: inc/metaboxes.php:90
+msgid "Otimizar conversões de funil"
+msgstr ""
+
+#: inc/metaboxes.php:91
+msgid "Reduzir custo de aquisição"
+msgstr ""
+
+#: inc/metaboxes.php:92
+msgid "Ser referência"
+msgstr ""
+
+#: inc/metaboxes.php:93
+msgid "Vender para Leads"
+msgstr "Vender para Leads"
+
+#: inc/metaboxes.php:98
+msgid "Localidade da Empresa"
+msgstr ""
+
+#: inc/metaboxes.php:102
+msgid "Norte"
+msgstr ""
+
+#: inc/metaboxes.php:103
+msgid "Nordeste"
+msgstr ""
+
+#: inc/metaboxes.php:104
+msgid "Centro-Oeste"
+msgstr ""
+
+#: inc/metaboxes.php:105
+msgid "Sudeste"
+msgstr ""
+
+#: inc/metaboxes.php:106
+msgid "Sul"
+msgstr ""
+
+#: inc/metaboxes.php:111
+msgid "Depoimento"
+msgstr ""
+
+#: inc/metaboxes.php:116
+msgid "Autor do depoimento"
+msgstr ""
+
+#: inc/metaboxes.php:121
+msgid "Cargo do autor do depoimento"
+msgstr ""
+
+#: inc/metaboxes.php:126
+msgid "Foto do depoimento"
+msgstr ""
+
+#: inc/metaboxes.php:131
+msgid "Dado 1"
+msgstr ""
+
+#: inc/metaboxes.php:136
+msgid "Resultado 1"
+msgstr ""
+
+#: inc/metaboxes.php:141
+msgid "Dado 2"
+msgstr ""
+
+#: inc/metaboxes.php:146
+msgid "Resultado 2"
+msgstr ""
+
+#: inc/metaboxes.php:151
+msgid "Dado 3"
+msgstr ""
+
+#: inc/metaboxes.php:156
+msgid "Resultado 3"
+msgstr ""
+
+#: page-templates/page-cases.php:12
+msgid ""
+"Saiba como <strong>empresas de todo o Brasil</strong> (e iguais a sua) estão "
+"<strong>aumentando suas vendas com o RD Station</strong>"
+msgstr ""
+"Entérate de cómo <strong>las empresas de todo Latinoamérica</strong> están "
+"<strong>aumentando sus ventas con RD Station</strong>"
+
+#: page-templates/page-cases.php:13
+msgid "Conheça nossas histórias de sucesso"
+msgstr "Conoce nuestras historias de éxito"
+
+#: page-templates/page-cases.php:28
+msgid ""
+"Selecione o tipo de <strong>história de sucesso</strong> que deseja ver:"
+msgstr "Selecciona el tipo de <strong>caso de éxito</strong> que quieras ver:"
+
+#: page-templates/page-cases.php:33
+msgid "Pequenas, médias e grandes empresas"
+msgstr "Pequeñas, medianas y grandes empresas"
+
+#: page-templates/page-cases.php:39
+msgid "Agências de marketing, publicidade e comunicação"
+msgstr "Agencias de Marketing, publicidad y comunicación"

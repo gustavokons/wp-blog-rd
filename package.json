@@ -1,0 +1,26 @@
+{
+  "name": "tests-gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Kons de Souza <gustavo.souza@resultadosdigitais.com.br>",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-git": "^2.0.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.0",
+    "gulp-util": "^3.0.8",
+    "minimist": "^1.2.0",
+    "pump": "^1.0.2",
+    "run-sequence": "^1.2.2",
+    "through2": "^2.0.3"
+  }
+}

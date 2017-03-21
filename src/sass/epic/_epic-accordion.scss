@@ -1,0 +1,52 @@
+.page-template-page-epic{
+  main{
+    /*accordion*/
+    .panel-group {
+      margin: $v-space 0;
+    }
+    .panel-heading {
+      background-color: $gray-lighter;
+      border-radius: 4px 4px 0 0;
+      cursor: pointer;
+      margin: 4px 0 0;
+      padding: 16px ($col-pad - 10);
+      position: relative;
+      &:after {
+        @include font-icon("\f068");
+        position: absolute;
+        right: $v-space;
+        top: 20px;
+      }
+      &.collapsed {
+        border-radius: 4px;
+        margin: 4px 0;
+        &:after {
+          @include font-icon("\f067");
+        }
+      }
+    }
+    .panel-collapse {
+      background-color: $white;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      overflow: hidden;
+      padding: $col-pad ($col-pad - 10);
+      &.in {
+        border-radius: 0 0 4px 4px;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-sm){
+  .page-template-page-epic{
+    main{
+      .panel-heading {
+        padding: 16px $col-pad;
+      }
+      .panel-collapse {
+        padding: $col-pad;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+/*!
+Theme Name: Blogs Resultados Digitais
+Author: Resultados Digitais
+Author URI: http://resultadosdigitais.com.br
+Description: Tema para blogs da Resultados Digitais.
+Version: 1.7.0
+
+*/
+
+// Base Styles
+
+@charset "utf-8";
+@import "sass/fonts";
+@import "sass/variables";
+@import "sass/mixins";
+@import "sass/bootstrap";
+@import "sass/overrides";
+@import "sass/global_nav";
+@import "sass/main_nav";
+@import "sass/search";
+@import "sass/single";
+@import "sass/archive";
+@import "sass/plugins";
+@import "sass/404";
+@import "sass/page";
+@import "sass/global";
+
+// Epic pages styles
+
+@import "sass/epic/epic-variables";
+@import "sass/epic/epic-mixins";
+@import "sass/epic/epic-typography";
+@import "sass/epic/epic-nav";
+@import "sass/epic/epic-article";
+@import "sass/epic/epic-images";
+@import "sass/epic/epic-accordion";
+@import "sass/epic/epic-carousel";
+@import "sass/epic/epic-scrollspy";
+@import "sass/preloader";
