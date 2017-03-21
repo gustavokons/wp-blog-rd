@@ -1,17 +1,16 @@
 module.exports = function() {
   var src = 'src';
-  var dist = 'dist/wp-content/themes/resultados_digitais';
+  var dist = 'dist';
+  var dist_wp = 'dist/wp-content/themes/resultados_digitais';
 
   var staging_env = [
     {
-      'name': 'staging',
-      'url': 'git@github.com:gustavokons/wp-theme.git'
+      'url': 'git@github.com:gustavokons/hub-repo.git'
     }
   ];
 
   var production_env = [
     {
-      'name': 'production',
       'url': 'git@github.com:gustavokons/wp-theme.git'
     }
   ];
@@ -19,6 +18,7 @@ module.exports = function() {
   var config = {
     src: src,
     dist: dist,
+    dist_wp: dist_wp,
     staging_env: staging_env,
     production_env: production_env,
     theme_files: [

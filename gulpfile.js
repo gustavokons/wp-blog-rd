@@ -11,6 +11,7 @@ var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var cssmin = require('gulp-cssmin');
 var uglify = require('gulp-uglify');
+var clean = require('gulp-clean');
 
 var config = require('./gulpconfig')();
 var commit_name = options.commit ? options.commit : 'commit-without-name';
@@ -20,12 +21,12 @@ gulp.task('sass', function () {
   return gulp.src(config.src + '/style.scss')
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(cssmin())
-    .pipe(gulp.dest(config.dist + '/'));
+    .pipe(gulp.dest(config.dist_wp + '/'));
 });
 
 gulp.task('copy', function () {
   return gulp.src(config.theme_files, { base: config.src })
-    .pipe(gulp.dest(config.dist + '/'));
+    .pipe(gulp.dest(config.dist_wp + '/'));
 });
 
 gulp.task('compile-js', function(cb) {
@@ -33,7 +34,7 @@ gulp.task('compile-js', function(cb) {
       gulp.src(config.src + '/js/*.js'),
       concat('scripts.js'),
       uglify(),
-      gulp.dest(config.dist + '/js/')
+      gulp.dest(config.dist_wp + '/js/')
     ],
     cb
   );
@@ -50,12 +51,21 @@ gulp.task('publish', function(cb) {
     });
 });
 
+gulp.task('push-repo', function(cb) {
+  exec('git -C ' + config.dist + '/ add .');
+  exec('git -C ' + config.dist + '/ commit -m "' + commit_name + '"');
+  exec('git -C ' + config.dist + '/ push origin master');
+});
+
 gulp.task('hub-repo', function() {
   var remotes = (env == 'staging') ? config.staging_env : config.production_env;
   for (var i = 0 ; i < remotes.length ; i++) {
-    exec('git remote add '+ remotes[i].name +' '+ remotes[i].url);
-    exec('git push '+ remotes[i].name+' master -f');
-    exec('git remote remove '+ remotes[i].name);
+    git.clone(remotes[i].url, { args: './' + config.dist }, function (err) {
+      if (err) {
+        throw err;
+      }
+      runSequence('sass','copy','compile-js','push-repo');
+    });
   }
 });
 
@@ -65,5 +75,5 @@ gulp.task('build', function() {
 
 gulp.task('default', function() {
   //runSequence('sass','copy','compile-js','publish','hub-repo');
-  runSequence('sass','copy','compile-js','publish');
+  runSequence('publish','hub-repo');
 });
