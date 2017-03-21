@@ -57,7 +57,11 @@ gulp.task('hub-repo', function() {
     exec('git push '+ remotes[i].name+' master -f');
     exec('git remote remove '+ remotes[i].name);
   }
-})
+});
+
+gulp.task('build', function() {
+  runSequence('sass','copy','compile-js');
+});
 
 gulp.task('default', function() {
   //runSequence('sass','copy','compile-js','publish','hub-repo');
