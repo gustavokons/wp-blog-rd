@@ -51,10 +51,11 @@ gulp.task('publish', function(cb) {
     });
 });
 
-gulp.task('push-repo', function(cb) {
-  exec('git -C ' + config.dist + '/ add .');
-  exec('git -C ' + config.dist + '/ commit -m "' + commit_name + '"');
-  exec('git -C ' + config.dist + '/ push origin master');
+gulp.task('push-repo', function() {
+  exec('git -C ' + config.dist + '/ add . && git -C ' + config.dist + '/ commit -m "' + commit_name + '" && git -C ' + config.dist + '/ push origin master', function(error, stdout, stderr) {
+    return gulp.src(config.dist, { read: false })
+      .pipe(clean());
+  });
 });
 
 gulp.task('hub-repo', function() {
@@ -74,6 +75,5 @@ gulp.task('build', function() {
 });
 
 gulp.task('default', function() {
-  //runSequence('sass','copy','compile-js','publish','hub-repo');
-  runSequence('publish','hub-repo');
+  runSequence('hub-repo');
 });

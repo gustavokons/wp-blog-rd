@@ -89,7 +89,7 @@
 							);
 						?>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#" data-toggle="modal" data-target="#search-modal">Buscar Post Again</a></li>
+							<li><a href="#" data-toggle="modal" data-target="#search-modal">Busca</a></li>
 						</ul>
 					</div>
 				</div>
