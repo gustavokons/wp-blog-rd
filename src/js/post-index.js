@@ -1,5 +1,3 @@
-'use strict'
-
 jQuery(function($) {
   var summary = '';
   var headings = $('article main').find('h2[class!="categories-list"], h3');

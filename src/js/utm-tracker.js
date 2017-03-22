@@ -1,5 +1,3 @@
-'use strict'
-
 jQuery(function($) {
   var utm_source = getUrlParameter('utm_source');
   var utm_campaign = getUrlParameter('utm_campaign');

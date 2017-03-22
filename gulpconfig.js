@@ -5,13 +5,13 @@ module.exports = function() {
 
   var staging_env = [
     {
-      'url': 'git@github.com:gustavokons/hub-repo.git'
+      'url': 'git@git.wpengine.com:production/testsblog.git'
     }
   ];
 
   var production_env = [
     {
-      'url': 'git@github.com:gustavokons/wp-theme.git'
+      'url': 'git@git.wpengine.com:production/testsblog.git'
     }
   ];
 

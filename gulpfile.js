@@ -19,8 +19,8 @@ var env = options.env ? options.env : 'staging';
 
 gulp.task('sass', function () {
   return gulp.src(config.src + '/style.scss')
-    .pipe(sass.sync().on('error', sass.logError))
-    .pipe(cssmin())
+    .pipe(sass().on('error', sass.logError))
+    //.pipe(cssmin())
     .pipe(gulp.dest(config.dist_wp + '/'));
 });
 
