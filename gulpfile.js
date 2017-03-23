@@ -9,7 +9,6 @@ var options = minimist(process.argv.slice(2));
 var exec = require('child_process').exec;
 var concat = require('gulp-concat');
 var sass = require('gulp-sass');
-var cssmin = require('gulp-cssmin');
 var uglify = require('gulp-uglify');
 var clean = require('gulp-clean');
 
@@ -19,8 +18,7 @@ var env = options.env ? options.env : 'staging';
 
 gulp.task('sass', function () {
   return gulp.src(config.src + '/style.scss')
-    .pipe(sass().on('error', sass.logError))
-    //.pipe(cssmin())
+    .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(gulp.dest(config.dist_wp + '/'));
 });
 
