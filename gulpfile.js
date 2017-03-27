@@ -59,7 +59,7 @@ gulp.task('push-repo', function() {
 gulp.task('hub-repo', function() {
   var remotes = (env == 'staging') ? config.staging_env : config.production_env;
   for (var i = 0 ; i < remotes.length ; i++) {
-    git.clone(remotes[i].url, { args: './' + config.dist }, function (err) {
+    git.clone(remotes[i].url, { args: './' + config.dist + ' --depth 1' }, function (err) {
       if (err) {
         throw err;
       }
